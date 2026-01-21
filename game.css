@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: #020617;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PERFIL MINI */
+.profile-mini {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-mini img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile-mini span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* BOTONES */
+button {
+  background: #22c55e;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #022c22;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* PANEL PERFIL */
+.profile-panel {
+  background: #020617;
+  padding: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+.profile-panel h3 {
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.profile-panel input {
+  background: #0f172a;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  width: 200px;
+}
+
+.profile-panel input::placeholder {
+  color: #94a3b8;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CANVAS */
+canvas {
+  background: #020617;
+  border-radius: 12px;
+  box-shadow: 0 0 0 2px #1e293b;
+}
+.top-bar {
+  background: #020617;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-area img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-panel {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  width: 260px;
+  background: #020617;
+  padding: 16px;
+  border-radius: 12px;
+  display: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.profile-panel input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #0f172a;
+  color: white;
+}
+
+.profile-panel button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}

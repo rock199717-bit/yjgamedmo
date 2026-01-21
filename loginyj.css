@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+}
+
+.login-card {
+  background: #020617;
+  padding: 32px;
+  width: 320px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 8px;
+}
+
+.login-card p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #0f172a;
+  color: white;
+}
+
+.login-card input::placeholder {
+  color: #94a3b8;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #22c55e;
+  color: #022c22;
+}
+
+.login-card button.secondary {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}
+
+/* 🔴 ERROR */
+.error {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #f87171;
+  min-height: 16px;
+}
+
+/* 🟢 ÉXITO */
+.success {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #22c55e;
+  min-height: 16px;
+}
+
+/* Botón secundario */
+.secondary {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}

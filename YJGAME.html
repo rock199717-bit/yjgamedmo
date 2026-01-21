@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agencia Creativa Tycoon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="game.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-bar">
+    <!-- PERFIL MINI -->
+    <div class="profile-area" id="openProfile">
+      <img
+        id="profilePhoto"
+        src="https://i.imgur.com/8Km9tLL.png"
+        alt="Avatar"
+      >
+      <span id="username">Cargando...</span>
+    </div>
+
+    <button id="logoutBtn">Cerrar sesión</button>
+  </header>
+
+  <!-- PANEL PERFIL -->
+  <div id="profilePanel" class="profile-panel">
+    <h3>Perfil</h3>
+
+    <input
+      id="newUsername"
+      type="text"
+      placeholder="Nuevo nombre o nick"
+    >
+    <button id="saveUsername">Guardar nombre</button>
+
+    <input
+      id="photoURL"
+      type="text"
+      placeholder="URL de la foto de perfil"
+    >
+    <button id="savePhoto">Guardar foto</button>
+
+    <button id="closeProfile" class="secondary">
+      Cerrar
+    </button>
+  </div>
+
+  <!-- JUEGO -->
+  <main>
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </main>
+
+  <!-- JS -->
+  <script type="module" src="game.js"></script>
+</body>
+</html>
