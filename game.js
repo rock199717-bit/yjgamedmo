@@ -51,7 +51,7 @@ const ctx = canvas.getContext("2d");
 // ================= AUTH + PERFIL =================
 onAuthStateChanged(auth, async user => {
   if (!user) {
-    window.location.href = "loginyj.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -128,7 +128,7 @@ savePhotoBtn.onclick = async () => {
 // 🚪 Logout
 logoutBtn.onclick = () => {
   signOut(auth).then(() => {
-    window.location.href = "loginyj.html";
+    window.location.href = "index.html";
   });
 };
 
